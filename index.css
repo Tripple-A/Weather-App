@@ -1,0 +1,29 @@
+body,html{
+    background-image: url('sky.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    width:20%;
+    height:7%;
+    padding-left: 2%;
+    font-size: 16px;
+    border-radius: 30px;
+    border-color: gold;
+}
+
+button{
+padding: 10px;
+border-radius: 10px;
+
+}
+
+.display{
+    display: none;
+}
