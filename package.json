@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "This is a weather app to test the knowledge of asynchronous functions in Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tripple-A/Weather-App.git"
+  },
+  "author": "Biodun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tripple-A/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Tripple-A/Weather-App#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
+}
