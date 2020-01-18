@@ -1,7 +1,8 @@
 import './index.css';
 
+const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
+
 async function find(search) {
-  const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
   try {
     const response = await giphy.search(search);
     document.querySelector('img').src = response.data[0].images.original.url;
