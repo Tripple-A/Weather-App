@@ -24,6 +24,10 @@ border-radius: 10px;
 
 }
 
+#date{
+    font-size: 26px;
+    padding-top:20px;
+}
 
 .display{
     padding-top: 10px;
