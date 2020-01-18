@@ -8,4 +8,4 @@ This is a weather app to test the knowledge of asynchronous functions in Javascr
 * The temperatures are converted can be converted to either Celcius or Farenheit.
 * Javascript asynchronous functions are employed using the async,await,try and catch keywords.
 
-The live version can be found [here]()
+The live version  will be published after merging.
