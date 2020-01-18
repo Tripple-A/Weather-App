@@ -2,6 +2,12 @@ import './index.css';
 
 const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
 
+let newValue;
+const temp = document.getElementById('temp');
+const deg = document.getElementById('degrees');
+const btn = document.querySelector('button');
+const btn2 = document.getElementById('farcel');
+
 async function find(search) {
   try {
     const response = await giphy.search(search);
@@ -24,6 +30,8 @@ function get(data) {
   document.querySelector('img').src = find(desc);
   const { country } = data.sys;
   const town = data.name;
+  deg.textContent = 'C';
+  btn2.textContent = 'Convert to Farenheit';
   assign('temp', Math.round(parseFloat(temp) - 273.15));
   assign('desc', desc);
   assign('country', country);
@@ -51,10 +59,7 @@ const locationUrl = function getUrl() {
   return url;
 };
 
-let newValue;
-const temp = document.getElementById('temp');
-const deg = document.getElementById('degrees');
-const btn2 = document.getElementById('farcel');
+
 function farenheit() {
   newValue = temp.textContent;
   newValue = Math.round((parseFloat(newValue, 10) - 32) * (5 / 9));
@@ -81,7 +86,6 @@ function convert() {
   return newValue;
 }
 
-const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
   findWeather(locationUrl());
 });
