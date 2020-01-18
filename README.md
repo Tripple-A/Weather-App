@@ -9,3 +9,5 @@ This is a weather app to test the knowledge of asynchronous functions in Javascr
 * Javascript asynchronous functions are employed using the async,await,try and catch keywords.
 
 The live version  will be published after merging.
+Below is a screenshot of what it looks like
+![Image](/src/proof.png)
