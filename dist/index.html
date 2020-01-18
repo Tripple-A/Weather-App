@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
     <title>Weather App</title>
 </head>
 <body>
-    <input type="text" placeholder="Type City Location here">
+    <div class="content">
+        <input type="text" placeholder="Type City Location here">
 <button> Check Weather</button>
 <div id="date"></div>
 <div class='display'>
@@ -16,8 +16,8 @@
    <p>
     <span id= 'town'> </span> ,
     <span id= 'country'> </span>
-   </p> <br>
-    <p >
+   </p> <br> <br>
+    <p>
         Temperature: 
         <span id='temp'> </span> <sup>0</sup> <span id='degrees'>C</span>
         <button id='farcel'>Convert to Farenheit</button>
@@ -30,6 +30,8 @@
     
     
 </div>
-    <script src="index.js"></script>
+    </div>
+    
+    <script src="main.js"></script>
 </body>
 </html>

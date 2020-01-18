@@ -1,9 +1,11 @@
+import './index.css';
+
 async function find(search) {
+  const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
   try {
-    const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH&s='${search}`, { mode: 'cors' });
-    const responseData = await response.json();
-    document.querySelector('img').src = (responseData.data.images.original.url);
-    return responseData;
+    const response = await giphy.search(search);
+    document.querySelector('img').src = response.data[0].images.original.url;
+    return response.data[0].images.original.url;
   } catch (err) {
     return err;
   }
@@ -18,7 +20,7 @@ function assign(a, b) {
 function get(data) {
   const { temp } = data.main;
   const desc = data.weather[0].description;
-  find(desc);
+  document.querySelector('img').src = find(desc);
   const { country } = data.sys;
   const town = data.name;
   assign('temp', Math.round(parseFloat(temp) - 273.15));
