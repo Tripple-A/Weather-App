@@ -87,5 +87,5 @@ btn.addEventListener('click', () => {
 });
 
 btn2.addEventListener('click', () => {
-  convert(document.getElementById('temp').textContent);
+  convert();
 });
