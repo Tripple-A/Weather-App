@@ -51,20 +51,32 @@ const locationUrl = function getUrl() {
   return url;
 };
 
-const btn2 = document.getElementById('farcel');
 let newValue;
+const temp = document.getElementById('temp');
+const deg = document.getElementById('degrees');
+const btn2 = document.getElementById('farcel');
+function farenheit() {
+  newValue = temp.textContent;
+  newValue = Math.round((parseFloat(newValue, 10) - 32) * (5 / 9));
+  return newValue;
+}
 
-function convert(num) {
+function celcius() {
+  newValue = temp.textContent;
+  newValue = Math.round((parseFloat(newValue, 10) * 9) / 5 + 32);
+  return newValue;
+}
+
+
+function convert() {
   if (btn2.textContent.includes('Celcius')) {
+    temp.textContent = farenheit();
+    deg.textContent = 'C';
     btn2.textContent = 'Convert to Farenheit';
-    newValue = (parseFloat(num, 10) - 32) * (5 / 9);
-    document.getElementById('temp').textContent = Math.round(newValue);
-    document.getElementById('degrees').textContent = 'C';
   } else {
+    temp.textContent = celcius();
+    deg.textContent = 'F';
     btn2.textContent = 'Convert to Celcius';
-    newValue = document.getElementById('temp').textContent;
-    document.getElementById('temp').textContent = Math.round((parseInt(newValue, 10) * 9) / 5 + 32);
-    document.getElementById('degrees').textContent = 'F';
   }
   return newValue;
 }
