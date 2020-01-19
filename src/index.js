@@ -1,5 +1,4 @@
 import './index.css';
-import './sky.jpg';
 import { celcius, farenheit } from './temp';
 
 const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
