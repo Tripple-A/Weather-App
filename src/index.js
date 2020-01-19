@@ -1,8 +1,8 @@
 import './index.css';
+import { celcius, farenheit } from './temp';
 
 const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
 
-let newValue;
 const temp = document.getElementById('temp');
 const deg = document.getElementById('degrees');
 const btn = document.getElementById('check');
@@ -58,17 +58,6 @@ const locationUrl = function getUrl() {
   input.value = '';
   return url;
 };
-
-
-function celcius(num) {
-  newValue = Math.round((parseFloat(num, 10) - 32) * (5 / 9));
-  return newValue;
-}
-
-function farenheit(num) {
-  newValue = Math.round((parseFloat(num, 10) * 9) / 5 + 32);
-  return newValue;
-}
 
 btn.addEventListener('click', () => {
   findWeather(locationUrl());
