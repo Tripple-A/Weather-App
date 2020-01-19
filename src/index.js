@@ -8,6 +8,7 @@ const deg = document.getElementById('degrees');
 const btn = document.getElementById('check');
 const btn2 = document.getElementById('far');
 const btn3 = document.getElementById('cel');
+const input = document.querySelector('input');
 
 async function find(search) {
   try {
@@ -53,14 +54,13 @@ async function findWeather(url) {
 }
 
 const locationUrl = function getUrl() {
-  const input = document.querySelector('input');
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&APPID=7c933702219e1d26960b3cc11edb864c`;
-  input.value = '';
   return url;
 };
 
 btn.addEventListener('click', () => {
   findWeather(locationUrl());
+  input.value = '';
 });
 
 btn2.addEventListener('click', () => {
