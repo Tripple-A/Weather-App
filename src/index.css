@@ -21,6 +21,7 @@ border-radius: 10px;
 }
 
 .display{
+    background-image: url('sky.jpg');
     padding-top: 10px;
     font-size: 30px;
     width:30%;
@@ -39,17 +40,11 @@ img{
 }
 
 .content{
-   
     height:1000px;
-    background-color: purple;
     background-attachment: fixed;
      background-image: url('sky.jpg');
     background-repeat: no-repeat;
     background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
   text-align: center;
 }
