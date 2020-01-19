@@ -42,6 +42,12 @@ function get(data) {
   progress.style.display = 'none';
 }
 
+function show() {
+  document.querySelector('.display').style.display = 'none';
+  document.getElementById('date').style.display = 'block';
+  progress.style.display = 'none';
+}
+
 async function findWeather(url) {
   let responseData;
   try {
@@ -50,8 +56,7 @@ async function findWeather(url) {
     get(responseData);
   } catch (err) {
     assign('date', 'We could not find the weather for your specified location');
-    document.querySelector('.display').style.display = 'none';
-    document.getElementById('date').style.display = 'block';
+    show();
   }
   return responseData;
 }
