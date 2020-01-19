@@ -5,8 +5,9 @@ const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
 let newValue;
 const temp = document.getElementById('temp');
 const deg = document.getElementById('degrees');
-const btn = document.querySelector('button');
-const btn2 = document.getElementById('farcel');
+const btn = document.getElementById('check');
+const btn2 = document.getElementById('far');
+const btn3 = document.getElementById('cel');
 
 async function find(search) {
   try {
@@ -31,7 +32,6 @@ function get(data) {
   const { country } = data.sys;
   const town = data.name;
   deg.textContent = 'C';
-  btn2.textContent = 'Convert to Farenheit';
   assign('temp', Math.round(parseFloat(temp) - 273.15));
   assign('desc', desc);
   assign('country', country);
@@ -60,29 +60,13 @@ const locationUrl = function getUrl() {
 };
 
 
-function farenheit() {
-  newValue = temp.textContent;
-  newValue = Math.round((parseFloat(newValue, 10) - 32) * (5 / 9));
+function celcius(num) {
+  newValue = Math.round((parseFloat(num, 10) - 32) * (5 / 9));
   return newValue;
 }
 
-function celcius() {
-  newValue = temp.textContent;
-  newValue = Math.round((parseFloat(newValue, 10) * 9) / 5 + 32);
-  return newValue;
-}
-
-
-function convert() {
-  if (btn2.textContent.includes('Celcius')) {
-    temp.textContent = farenheit();
-    deg.textContent = 'C';
-    btn2.textContent = 'Convert to Farenheit';
-  } else {
-    temp.textContent = celcius();
-    deg.textContent = 'F';
-    btn2.textContent = 'Convert to Celcius';
-  }
+function farenheit(num) {
+  newValue = Math.round((parseFloat(num, 10) * 9) / 5 + 32);
   return newValue;
 }
 
@@ -91,5 +75,15 @@ btn.addEventListener('click', () => {
 });
 
 btn2.addEventListener('click', () => {
-  convert();
+  if (deg.textContent === 'C') {
+    temp.textContent = farenheit(temp.textContent);
+    deg.textContent = 'F';
+  }
+});
+
+btn3.addEventListener('click', () => {
+  if (deg.textContent === 'F') {
+    temp.textContent = celcius(temp.textContent);
+    deg.textContent = 'C';
+  }
 });
