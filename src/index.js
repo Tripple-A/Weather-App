@@ -9,6 +9,7 @@ const btn = document.getElementById('check');
 const btn2 = document.getElementById('far');
 const btn3 = document.getElementById('cel');
 const input = document.querySelector('input');
+const progress = document.querySelector('.lds-roller');
 
 async function find(search) {
   try {
@@ -26,6 +27,7 @@ function assign(a, b) {
   document.getElementById('date').style.display = 'none';
 }
 
+
 function get(data) {
   const { temp } = data.main;
   const desc = data.weather[0].description;
@@ -37,6 +39,7 @@ function get(data) {
   assign('desc', desc);
   assign('country', country);
   assign('town', town);
+  progress.style.display = 'none';
 }
 
 async function findWeather(url) {
@@ -61,6 +64,7 @@ const locationUrl = function getUrl() {
 btn.addEventListener('click', () => {
   findWeather(locationUrl());
   input.value = '';
+  progress.style.display = 'block';
 });
 
 btn2.addEventListener('click', () => {
