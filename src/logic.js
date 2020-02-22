@@ -3,7 +3,7 @@ const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
 async function find(search) {
   try {
     const response = await giphy.search(search);
-    return response.data[0].images.original.url;
+    return response.data[2].images.original.url;
   } catch (err) {
     return err;
   }

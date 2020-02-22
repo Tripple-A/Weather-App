@@ -37,14 +37,14 @@ const get = (data) => {
   }
 };
 
-const locationUrl = () => {
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&APPID=7c933702219e1d26960b3cc11edb864c`;
-  return url;
+const locationUrl = (url) => {
+  const url2 = `http://api.openweathermap.org/data/2.5/weather?q=${url}&APPID=7c933702219e1d26960b3cc11edb864c`;
+  return url2;
 };
 
 
-async function check1() {
-  const data = await findWeather(locationUrl());
+async function check1(url3) {
+  const data = await findWeather(locationUrl(url3));
   const url = await find(data.description);
   const temp = Math.round(parseFloat(data.temp) - 273.15);
   assign('temp', temp);
@@ -52,8 +52,8 @@ async function check1() {
   get(data);
 }
 
-async function check2() {
-  const data = await findWeather(locationUrl());
+async function check2(url3) {
+  const data = await findWeather(locationUrl(url3));
   const url = await find(data.description);
   const temp = Math.round(parseFloat(data.temp) - 273.15);
   assign('temp', farenheit(temp));
@@ -62,13 +62,16 @@ async function check2() {
 }
 
 btn.addEventListener('click', () => {
-  check1();
+  check1(input.value);
   deg.textContent = 'C';
   unshow();
 });
 
 btn2.addEventListener('click', () => {
-  check2();
+  check2(input.value);
   deg.textContent = 'F';
   unshow();
 });
+
+check1('vancouver');
+deg.textContent = 'C';
