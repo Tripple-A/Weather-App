@@ -182,6 +182,9 @@ button{
    .btns{
      padding-left:0px
    }
+   #desc{
+     padding-left: -2%;
+   }
  }
  @media screen and (min-width: 1030px) {
 .display{
