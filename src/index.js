@@ -13,12 +13,12 @@ const progress = document.querySelector('.lds-roller');
 
 const assign = (a, b) => {
   document.getElementById(a).textContent = b;
-  document.querySelector('.display').style.display = 'block';
 };
 
 const show = () => {
   document.querySelector('.display').style.display = 'none';
   document.getElementById('date').style.display = 'block';
+  document.getElementById('today-info').style.display = 'none';
   progress.style.display = 'none';
 };
 
@@ -29,9 +29,13 @@ const unshow = () => {
 
 const get = (data) => {
   if (data === '204') { show(); } else {
-    assign('desc', data.description);
+    document.getElementById('date').style.display = 'none';
+    input.value = '';
+    document.getElementById('today-info').style.display = 'flex';
+    document.querySelector('.display').style.display = 'block';
     assign('country', data.country);
     assign('town', data.name);
+    assign('desc', data.description);
     assign('pressure', data.pressure);
     assign('humidity', data.humidity);
     progress.style.display = 'none';
@@ -63,8 +67,8 @@ async function check2(url3) {
   const temp2 = Math.round(parseFloat(data.feels_like) - 273.15);
   assign('temp', farenheit(temp));
   assign('feelslike', farenheit(temp2));
-  document.querySelector('img').src = url;
   deg.textContent = 'F';
+  document.querySelector('img').src = url;
   get(data);
 }
 
@@ -77,11 +81,11 @@ btn.addEventListener('click', () => {
 
 btn2.addEventListener('click', () => {
   check2(input.value);
+  deg.textContent = 'F';
   document.querySelector('#deg').textContent = 'F';
   unshow();
 });
 
 check1('vancouver');
-input.value = 'vancouver';
-deg.textContent = 'C';
+document.getElementById('today').textContent = new Date().toDateString();
 document.querySelector('#deg').textContent = 'C';
