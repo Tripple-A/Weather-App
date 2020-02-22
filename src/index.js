@@ -1,4 +1,5 @@
 import './index.css';
+import './rolling.css';
 import { farenheit } from './temp';
 import { findWeather, find } from './logic';
 
