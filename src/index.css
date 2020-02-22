@@ -18,10 +18,10 @@ border-color: gold;
 #date{
     font-size: 26px;
     padding-top:20px;
+    display: none;
 }
 
 .display{
-    background-image: url('sky.jpg');
     padding-top: 10px;
     font-size: 30px;
     width:30%;
