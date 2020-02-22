@@ -132,6 +132,7 @@ button{
  }
  .display{
    padding-bottom: 25%;
+   padding-left: 5%;
  }
  
 }
@@ -151,10 +152,8 @@ button{
   font-size: 20px;
 }
   .display{
-    width: 80%;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 10%;
+    width: 90%;
+    padding-right: 15%;
   }
 
   .weather-info{
@@ -182,18 +181,27 @@ button{
    .btns{
      padding-left:0px
    }
-   #desc{
-     padding-left: -2%;
-   }
+  .display{
+    padding-left: 10%;
+    width: 90%;
+    text-align: center;
+  }
+   
  }
  @media screen and (min-width: 1030px) {
 .display{
   width: 25%;
   padding-right: 10%;
-  padding-left: 2%;
+  padding-left: 5%;
   padding-bottom: 20%;
 }
 body{
   overflow: hidden;
 }
+ }
+
+ @media screen and (max-width: 1030px){
+   .display{
+     padding-left: 5%;
+   }
  }
