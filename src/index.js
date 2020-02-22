@@ -43,7 +43,7 @@ const get = (data) => {
 };
 
 const locationUrl = (url) => {
-  const url2 = `http://api.openweathermap.org/data/2.5/weather?q=${url}&APPID=7c933702219e1d26960b3cc11edb864c`;
+  const url2 = `https://api.openweathermap.org/data/2.5/weather?q=${url}&APPID=7c933702219e1d26960b3cc11edb864c`;
   return url2;
 };
 
