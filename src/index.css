@@ -1,3 +1,14 @@
+body{
+  background-attachment: fixed;
+  background-image: url('world.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  padding:0;
+  margin:0;
+}
+
 input{
     
     margin-top: 10px;
@@ -23,6 +34,7 @@ h2{
 }
 
 .display{
+  overflow-x: hidden;
   text-align: left;
     padding-bottom: 9%;
     padding-top: 6%;
@@ -42,6 +54,7 @@ h2{
   padding-left: 10%;
   padding-top:7%;
   color: white;
+  overflow-x: hidden;
 }
 
 p{
@@ -57,13 +70,6 @@ img{
   height:100%;
 }
 
-body{
-  background-attachment: fixed;
-  background-image: url('world.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .content{
     height:100%;
     
@@ -99,6 +105,7 @@ button{
 }
 #today-info{
   display:flex;
+  overflow-x: hidden;
 }
 
 #temp, .degrees{
@@ -143,9 +150,10 @@ button{
   font-size: 20px;
 }
   .display{
-    width: 100%;
+    width: 80%;
     text-align: center;
-    padding-left: 8%;
+    padding-left: 20%;
+    padding-right: 10%;
   }
 
   .weather-info{
@@ -159,6 +167,10 @@ button{
   .type{
     padding-bottom: 6%;
   }
+  .weather-info{
+    text-align: left;
+    font-size: 20px;
+  }
  }
 
  @media screen and (max-width: 320px) {
@@ -169,4 +181,15 @@ button{
    .btns{
      padding-left:0px
    }
+ }
+ @media screen and (min-width: 1030px) {
+.display{
+  width: 25%;
+  padding-right: 10%;
+  padding-left: 2%;
+  padding-bottom: 20%;
+}
+body{
+  overflow: hidden;
+}
  }
