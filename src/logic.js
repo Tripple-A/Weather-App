@@ -15,12 +15,17 @@ async function findWeather(url) {
   try {
     const response = await fetch(url, { mode: 'cors' });
     responseData = await response.json();
+    console.log(responseData)
     const { temp } = responseData.main;
     const { description } = responseData.weather[0];
     const { country } = responseData.sys;
     const { name } = responseData;
+    const { feels_like } = responseData.main;
+    const { pressure } = responseData.main;
+    const { humidity } = responseData.main;
+
     weather = {
-      temp, description, country, name,
+      temp, description, country, name, feels_like, pressure, humidity,
     };
   } catch (err) {
     return '204';
