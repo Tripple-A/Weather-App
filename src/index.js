@@ -1,7 +1,7 @@
 import './index.css';
 import './rolling.css';
 import { farenheit } from './temp';
-import { findWeather, find } from './logic';
+import { findWeather, find, ip } from './logic';
 
 
 const deg = document.querySelector('.degrees');
@@ -55,7 +55,7 @@ async function check1(url3) {
   const temp2 = Math.round(parseFloat(data.feels_like) - 273.15);
   assign('temp', temp);
   assign('feelslike', temp2);
-  document.querySelector('img').src = url;
+  document.querySelector('.bg').src = url;
   deg.textContent = 'C';
   get(data);
 }
@@ -68,24 +68,29 @@ async function check2(url3) {
   assign('temp', farenheit(temp));
   assign('feelslike', farenheit(temp2));
   deg.textContent = 'F';
-  document.querySelector('img').src = url;
+  document.querySelector('.bg').src = url;
   get(data);
 }
 
 btn.addEventListener('click', () => {
-  check1(input.value);
+  !input.value? check1(document.getElementById('town').textContent) : check1(input.value) ;
   deg.textContent = 'C';
   document.querySelector('#deg').textContent = 'C';
   unshow();
 });
 
 btn2.addEventListener('click', () => {
-  check2(input.value);
+  !input.value? check2(document.getElementById('town').textContent) : check2(input.value) ;
   deg.textContent = 'F';
   document.querySelector('#deg').textContent = 'F';
   unshow();
 });
 
-check1('vancouver');
+async function now() {
+  const city = await ip();
+  check1(city);
+}
+
+now();
 document.getElementById('today').textContent = new Date().toDateString();
 document.querySelector('#deg').textContent = 'C';
