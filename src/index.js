@@ -35,7 +35,7 @@ const get = (data) => {
     document.querySelector('.display').style.display = 'block';
     assign('country', data.country);
     assign('town', data.name);
-    assign('desc', data.description);
+    assign('desc', data.description.replace(/^\w/, (c) => c.toUpperCase()));
     assign('pressure', data.pressure);
     assign('humidity', data.humidity);
     progress.style.display = 'none';
