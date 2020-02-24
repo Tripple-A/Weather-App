@@ -2,7 +2,7 @@ const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
 
 async function ip() {
   try {
-    const response = await fetch('http://api.ipstack.com/check?access_key=aedc897955e3ae2c82d6e9e26bd5cb4d',{mode: 'cors'})
+    const response = await fetch('https://api.ipstack.com/check?access_key=aedc897955e3ae2c82d6e9e26bd5cb4d',{mode: 'cors'})
     const responseData = await response.json();
     return (responseData.city);
   } catch (err) {
