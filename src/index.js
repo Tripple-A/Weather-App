@@ -87,8 +87,9 @@ btn2.addEventListener('click', () => {
 });
 
 async function now() {
-  const city = await ip();
-  check1(city);
+  const geo = await ip();
+  check1(geo.city);
+  document.querySelector('.flag').src = geo.location.country_flag;
 }
 
 now();
