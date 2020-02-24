@@ -88,8 +88,8 @@ btn2.addEventListener('click', () => {
 
 async function now() {
   const geo = await ip();
-  check1(geo.city);
-  document.querySelector('.flag').src = geo.location.country_flag;
+  geo? check1(geo.city): check1('vancouver')
+  geo? document.querySelector('.flag').src = geo.location.country_flag : null;
 }
 
 now();
