@@ -1,5 +1,3 @@
-const giphy = require('giphy-api')('1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH');
-
 async function ip() {
   try {
     const response = await fetch('http://api.ipstack.com/check?access_key=aedc897955e3ae2c82d6e9e26bd5cb4d', { mode: 'cors' });
@@ -12,8 +10,9 @@ async function ip() {
 
 async function find(search) {
   try {
-    const response = await giphy.search(search);
-    return response.data[2].images.original.url;
+    const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=1ciWQ3R3BbnLWyjnSWHUIKmeC1TMV1wH&s=${search}`, { mode: 'cors' });
+    const res = await response.json();
+    return res.data.images.original.url;
   } catch (err) {
     return err;
   }
