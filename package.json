@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "build": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,10 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "giphy-api": "^2.0.1"
+    "css": "^2.2.4",
+    "giphy-api": "^2.0.1",
+    "tailwind": "^4.0.0",
+    "express":"*",
+"body-parser":"*"
   }
 }

@@ -1,7 +1,10 @@
 const path = require('path');
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
 module.exports = {
   entry: './src/index.js',
+  mode: isDevelopment ? 'development' : 'production',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
