@@ -1,6 +1,6 @@
 body{
+  background-image: url('sunset.jpg');
   background-attachment: fixed;
-  background-image: url('world.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -67,13 +67,13 @@ p{
   left: 0;
   top: 0;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
   height:100%;
 }
 
 .flag{
-  height: 10%;
-  width:10%;
+  height: 7%;
+  width:7%;
   padding-left: 15px;
   padding-top: 20px;
 }
@@ -99,7 +99,9 @@ p{
 button{
   color: darkblue;
   font-weight: bold;
-  border-bottom-left-radius: 3px;
+  border-radius: 3px;
+  border:none;
+  margin-right:5px
 }
 
 .expo{

@@ -11,4 +11,4 @@ This is a weather app to test the knowledge of asynchronous functions in Javascr
 
 Find the live version [here]().
 Below is a screenshot of what it looks like
-![Image](/src/proof1.png)
+![Image](/src/weather.png)

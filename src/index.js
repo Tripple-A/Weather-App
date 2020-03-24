@@ -39,6 +39,13 @@ const get = (data) => {
     assign('pressure', data.pressure);
     assign('humidity', data.humidity);
     progress.style.display = 'none';
+    if (document.querySelector('.degrees').textContent === 'C') {
+      btn.style.backgroundColor = 'gold';
+      btn2.style.backgroundColor = 'white';
+    } else {
+      btn.style.backgroundColor = 'white';
+      btn2.style.backgroundColor = 'gold';
+    }
   }
 };
 
