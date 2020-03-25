@@ -38,6 +38,7 @@ const get = (data) => {
     assign('desc', data.description.replace(/^\w/, (c) => c.toUpperCase()));
     assign('pressure', data.pressure);
     assign('humidity', data.humidity);
+    document.querySelector('.flag').src = `https://www.countryflags.io/${data.country}/flat/64.png`
     progress.style.display = 'none';
     if (document.querySelector('.degrees').textContent === 'C') {
       btn.style.backgroundColor = 'gold';
@@ -96,7 +97,6 @@ btn2.addEventListener('click', () => {
 async function now() {
   const geo = await ip();
   geo ? check1(geo.city) : check1('vancouver');
-  geo ? document.querySelector('.flag').src = `https://www.countryflags.io/${geo.country_code}/flat/64.png` : null;
 }
 
 now();
