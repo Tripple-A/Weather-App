@@ -33,7 +33,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 ## Built With
 * HTML5
 * CSS
-* VANILLA JAVASCRIPT
+* JAVASCRIPT(ES6)
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW
