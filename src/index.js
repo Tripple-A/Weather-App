@@ -20,6 +20,7 @@ const show = () => {
   document.getElementById('date').style.display = 'block';
   document.getElementById('today-info').style.display = 'none';
   progress.style.display = 'none';
+  document.querySelector('.flag').src = '';
 };
 
 const unshow = () => {
