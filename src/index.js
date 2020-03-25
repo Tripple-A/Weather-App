@@ -80,14 +80,14 @@ async function check2(url3) {
 }
 
 btn.addEventListener('click', () => {
-  !input.value? check1(document.getElementById('town').textContent) : check1(input.value) ;
+  !input.value ? check1(document.getElementById('town').textContent) : check1(input.value) ;
   deg.textContent = 'C';
   document.querySelector('#deg').textContent = 'C';
   unshow();
 });
 
 btn2.addEventListener('click', () => {
-  !input.value? check2(document.getElementById('town').textContent) : check2(input.value) ;
+  !input.value ? check2(document.getElementById('town').textContent) : check2(input.value) ;
   deg.textContent = 'F';
   document.querySelector('#deg').textContent = 'F';
   unshow();
@@ -95,8 +95,8 @@ btn2.addEventListener('click', () => {
 
 async function now() {
   const geo = await ip();
-  geo? check1(geo.city): check1('vancouver')
-  geo? document.querySelector('.flag').src = geo.location.country_flag : null;
+  geo ? check1(geo.city) : check1('vancouver');
+  geo ? document.querySelector('.flag').src = `https://www.countryflags.io/${geo.country_code}/flat/64.png` : null;
 }
 
 now();

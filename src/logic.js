@@ -1,6 +1,6 @@
 async function ip() {
   try {
-    const response = await fetch('http://api.ipstack.com/check?access_key=aedc897955e3ae2c82d6e9e26bd5cb4d', { mode: 'cors' });
+    const response = await fetch('https://ipfind.co/?ip=105.112.70.208&auth=f5ac562a-c9a7-4985-b964-bbc444515f2d', { mode: 'cors' });
     const responseData = await response.json();
     return (responseData);
   } catch (err) {
