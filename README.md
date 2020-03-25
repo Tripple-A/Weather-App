@@ -4,7 +4,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 ## Table of Contents
 
 * [User Features](#user-features)
-* [Concepts and Apis Employed](#concepts)
+* [Concepts and Apis Employed](#concepts-and-apis-employed)
 * [Built With](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
@@ -21,7 +21,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 * The temperatures can be gotten in either Celcius or Farenheit.
 * The app is mobile-rsponsive.
 
-<!-- concepts -->
+<!-- concepts and apis employed -->
 ## Concepts and APIs Employed
 * It employs the Openweather map API for weather information.
 * It employs the giffy API for gifs that describe the weather.
