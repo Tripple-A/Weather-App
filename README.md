@@ -37,7 +37,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 
 <!-- LIVE PREVIEW -->
 ## LIVE PREVIEW
-Find the live version [here](http://weather-gypsy.herokuapp.com/).
+Find the live version [here](https://weather-gypsy.herokuapp.com/).
 Below is a screenshot of what it looks like on both mobile screens and larger screens.
 ![Image](/src/proof.png)
 
