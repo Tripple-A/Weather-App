@@ -3,8 +3,8 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 
 ## Table of Contents
 
-* [Features](#FEATURES)
-* [Concepts and Apis Employed](#CONCEPTS)
+* [Features](#features)
+* [Concepts and Apis Employed](#concepts)
 * [Built With](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
@@ -14,14 +14,14 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 * [Acknowledgements](#acknowledgements)
 
 
-<!-- FEATURES -->
+<!-- features -->
 ## User Features
 * A user can get the weather conditions of any city location he types in.
 * A user can not only see the weather features but the country of the city he searched for and the country flag.
 * The temperatures can be gotten in either Celcius or Farenheit.
 * The app is mobile-rsponsive.
 
-<!-- CONCEPTS -->
+<!-- concepts -->
 ## Concepts and APIs Employed
 * It employs the Openweather map API for weather information.
 * It employs the giffy API for gifs that describe the weather.
