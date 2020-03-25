@@ -3,7 +3,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 
 ## Table of Contents
 
-* [Features](#features)
+* [User Features](#user-features)
 * [Concepts and Apis Employed](#concepts)
 * [Built With](#built-with)
 * [Live Preview](#live-preview)
@@ -14,7 +14,7 @@ This is a weather app to put into to practice my knowledge of asynchronous funct
 * [Acknowledgements](#acknowledgements)
 
 
-<!-- features -->
+<!-- User features -->
 ## User Features
 * A user can get the weather conditions of any city location he types in.
 * A user can not only see the weather features but the country of the city he searched for and the country flag.
