@@ -1,8 +1,7 @@
 body{
-  background-image: url('https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');
+  background-image: url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80');
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   overflow-x: hidden;
   padding:0;
@@ -120,6 +119,7 @@ button{
 #today-info{
   display:flex;
   overflow-x: hidden;
+  bottom:0;
 }
 
 #temp, .degrees{
@@ -206,6 +206,10 @@ button{
 }
 body{
   overflow: hidden;
+}
+.expo{
+  font-size: 18px;
+  
 }
  }
 
