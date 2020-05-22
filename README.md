@@ -8,7 +8,7 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 * [Built With](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
-* [Instalation of This App](#instalation)
+* [Installation of This App](#instalation)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -36,13 +36,13 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 * JAVASCRIPT(ES6)
 
 <!-- LIVE PREVIEW -->
-## LIVE PREVIEW
+## Live Preview
 Find the live version [here](https://weather-gypsy.herokuapp.com/).
 Below is a screenshot of what it looks like on both mobile screens and larger screens.
 ![Image](/src/proof.png)
 
 <!-- REQUIRED INSTALLATION -->
-## REQUIRED INSTALLATIONS
+## Required Installations
 * npm
 * webpack
 
