@@ -5,7 +5,7 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 
 * [User Features](#user-features)
 * [Concepts and Apis Employed](#concepts-and-apis-employed)
-* [Built With](#built-with)
+* [Built with](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
 * [Installation of This App](#instalation)
@@ -29,8 +29,8 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 * It employs the country-flag api to assign country flags per search.
 * Javascript asynchronous functions are employed using the async,await,try and catch keywords.
 
-<!-- BUILT WITH -->
-## Built With
+<!-- BUILT wITH -->
+## Built with
 * HTML5
 * CSS
 * JavaScript
