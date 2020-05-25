@@ -1,5 +1,5 @@
 # Weather-App
-This is a weather app I built to put into practice my knowledge of asynchronous functions in Javascript.
+This is a weather app I built to put into practice my knowledge of asynchronous functions in JavaScript.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 ## Built With
 * HTML5
 * CSS
-* JAVASCRIPT(ES6)
+* JavaScript
 
 <!-- LIVE PREVIEW -->
 ## Live Preview
