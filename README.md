@@ -4,7 +4,7 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 ## Table of Contents
 
 * [User Features](#user-features)
-* [Concepts and Apis Employed](#concepts-and-apis-employed)
+* [Concepts and APIs Employed](#concepts-and-apis-employed)
 * [Built with](#built-with)
 * [Live Preview](#live-preview)
 * [Required Installations](#required-installations)
