@@ -51,7 +51,7 @@ Below is a screenshot of what it looks like on both mobile screens and larger sc
 
 Once you have installed the requiered packages shown on the [Required Installations](#required-installations), proceed with the following steps
 
-Clone the Repository,
+Clone the Repository
 
 ```Shell
 your@pc:~$ git clone git@github.com:Tripple-A/Weather-App.git
