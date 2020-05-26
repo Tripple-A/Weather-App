@@ -19,15 +19,15 @@ This is a weather app I built to put into practice my knowledge of asynchronous 
 * A user can get the weather conditions of any city location he types in.
 * A user can not only see the weather features but the country of the city he searched for and the country flag.
 * The temperatures can be gotten in either Celcius or Farenheit.
-* The app is mobile-rsponsive.
+* The app is mobile-responsive.
 
 <!-- concepts and apis employed -->
 ## Concepts and APIs Employed
-* It employs the Openweather map API for weather information.
+* It employs the OpenWeatherMap API for weather information.
 * It employs the giffy API for gifs that describe the weather.
-* It employs the ip find api to get the current location of the user on page load.
+* It employs the 'ip-find' API to get the current location of the user on page load.
 * It employs the country-flag api to assign country flags per search.
-* Javascript asynchronous functions are employed using the async,await,try and catch keywords.
+* JavaScript asynchronous functions are employed using the async,await,try and catch keywords.
 
 <!-- BUILT wITH -->
 ## Built with
@@ -43,8 +43,8 @@ Below is a screenshot of what it looks like on both mobile screens and larger sc
 
 <!-- REQUIRED INSTALLATION -->
 ## Required Installations
-* npm
-* webpack
+* Npm
+* Webpack
 
 <!-- INSTALLATION -->
 ## Installation of This Repository
